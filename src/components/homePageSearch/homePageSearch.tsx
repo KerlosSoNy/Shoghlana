@@ -5,12 +5,12 @@ import CustomSelectMenu from '../customeSelectMenu/customSelectMenu'
 
 export default function HomePageSearch() {
     return (
-        <div className=' w-[calc(100%-56px)] z-[10] flex flex-col items-start justify-start p-[23px] bg-white 
-        h-[358px] rounded-[20px] text-text'>
-            <span className='text-[31px] font-[500]'>Discover. Explore your Job Offer</span>
+        <div className='w-[calc(100%-16px)] md:w-[calc(100%-56px)] z-[10] flex flex-col items-start justify-start p-[23px]  bg-white 
+        h-fit rounded-[20px] text-text'>
+            <span className='text-[18px] md:text-[31px] font-[500]'>Discover. Explore your Job Offer</span>
             <TabsSearchHomePage />
-            <div className='flex flex-row mt-[46px] items-center justify-between w-[100%]'>
-                <div className='w-[79.5%]'>
+            <div className='flex flex-col lg:flex-row mt-[20px] xl:mt-[46px] items-center justify-between w-[100%]'>
+                <div className='w-[100%] lg:w-[64.5%] xl:w-[79.5%]'>
                     <CustomSelectMenu
                         placeholder='Search Jobs (e.g. UI/UX Desinger)'
                         label='Search Job' shadow={false}
@@ -21,7 +21,7 @@ export default function HomePageSearch() {
                         }
                         noBorder isGray />
                 </div>
-                <div className='w-[19.5%]'>
+                <div className='w-[100%] lg:w-[35.5%] xl:w-[19.5%]'>
                     <CustomSelectMenu placeholder='Find Location (e.g. inside Egypt)' icon={
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_3_4685)">
@@ -38,7 +38,7 @@ export default function HomePageSearch() {
                 </div>
             </div>
             <button
-                className='bg-main text-white flex flex-row items-center gap-2 text-[15px] font-[500] py-[9px] px-[18px] rounded-[5px] w-full  justify-center mt-[24px]'>Discover Now <Image width={15} height={15} src={'/assets/arrow-right.svg'} alt='arrow' />
+                className='bg-main text-white flex flex-row items-center gap-2 text-[15px] font-[500] py-[9px] px-[18px] rounded-[5px] w-full  justify-center'>Discover Now <Image width={15} height={15} src={'/assets/arrow-right.svg'} alt='arrow' />
             </button>
         </div>
     )

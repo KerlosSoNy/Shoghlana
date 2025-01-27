@@ -104,6 +104,7 @@ const CustomSelectMenu: FC<CustomSelectMenuProps> = ({
         menu: (provided) => ({
             ...provided,
             color: "#333",
+            fontSize: "14px",
         }),
         container: (provided) => ({
             ...provided,
