@@ -55,13 +55,14 @@ const CustomSelectMenu: FC<CustomSelectMenuProps> = ({
     disableInternalState = false,
     icon,
 }) => {
-    const [selectedValue, setSelectedValue] = useState<any>(null);
+    const [selectedValue, setSelectedValue] = useState(null);
 
     useEffect(() => {
         if (!disableInternalState && defaultData !== undefined) {
             const updatedSelectedObject =
                 options.length > 0 &&
                 options?.find((option) => option.id === defaultData);
+            // @ts-expect-error: Type mismatch
             setSelectedValue(updatedSelectedObject || null);
         }
     }, [defaultData, options, disableInternalState]);
@@ -70,6 +71,7 @@ const CustomSelectMenu: FC<CustomSelectMenuProps> = ({
         selectedOption: SingleValue<OptionType> | MultiValue<OptionType>
     ) => {
         if (!disableInternalState) {
+            // @ts-expect-error: Type mismatch
             setSelectedValue(selectedOption);
         }
         if (onChange) {
@@ -157,7 +159,7 @@ const CustomSelectMenu: FC<CustomSelectMenuProps> = ({
             {error ? (
                 <div className="ps-2 text-red-500">{error}</div>
             ) : (
-                <div className="ps-2 opacity-0 disabled">" "</div>
+                <div className="ps-2 opacity-0 disabled">{" "}</div>
             )}
         </div>
     );

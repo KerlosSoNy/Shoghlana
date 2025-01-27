@@ -3,7 +3,7 @@ import Navbar from "@/components/navbar/navbar";
 
 export default function Home() {
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden ">
       <Navbar />
       <HeroSection />
     </div>
