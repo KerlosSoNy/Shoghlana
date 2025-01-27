@@ -7,7 +7,7 @@ export default function HeroSection() {
         <div className='mx-[8px] w-[calc(100%-16px)] rounded-[25px] relative pb-[24px]
          !bg-black/15 my-[10px] overflow-hidden'>
             <Background />
-            <div className='flex flex-col items-center pt-[200] md:pt-[281px] text-white h-full'>
+            <div className='flex flex-col items-center !pt-[200] md:pt-[281px] text-white h-full'>
                 <div className='flex flex-col text-center'>
                     <span className='text-[25px] md:text-[50px] lg:text-[76px] font-medium'>
                         Find the Best Jobs in Egypt

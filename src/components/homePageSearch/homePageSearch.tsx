@@ -9,8 +9,8 @@ export default function HomePageSearch() {
         h-fit rounded-[20px] text-text'>
             <span className='text-[18px] md:text-[31px] font-[500]'>Discover. Explore your Job Offer</span>
             <TabsSearchHomePage />
-            <div className='flex flex-col lg:flex-row mt-[20px] xl:mt-[46px] items-center justify-between w-[100%]'>
-                <div className='w-[100%] lg:w-[64.5%] xl:w-[79.5%]'>
+            <div className='flex flex-col lg:flex-row mt-[20px] xl:mt-[46px] mb-4 items-center justify-between w-[100%]'>
+                <div className='w-[100%] lg:w-[60.5%] xl:w-[70.5%]'>
                     <CustomSelectMenu
                         placeholder='Search Jobs (e.g. UI/UX Desinger)'
                         label='Search Job' shadow={false}
@@ -21,7 +21,7 @@ export default function HomePageSearch() {
                         }
                         noBorder isGray />
                 </div>
-                <div className='w-[100%] lg:w-[35.5%] xl:w-[19.5%]'>
+                <div className='w-[100%] lg:w-[39%] xl:w-[28.5%]'>
                     <CustomSelectMenu placeholder='Find Location (e.g. inside Egypt)' icon={
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_3_4685)">
