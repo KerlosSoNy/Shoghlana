@@ -9,10 +9,10 @@ export default function ScrollButton({ direction, onClick, classes }: ScrollButt
     return (
         <button
             onClick={onClick}
-            className={`absolute w-[40px] h-[40px] -top-20
+            className={`absolute w-[40px] h-[40px] top-0 md:-top-[75px]
                 flex flex-col items-center justify-center
                 ${classes ? classes : "bg-main"}  rounded-[8px] shadow-lg hover:bg-main/80 transition-colors 
-                ${direction === 'right' ? '!-right-5' : 'right-10'} z-10`}
+                ${direction === 'right' ? 'right-0 md:-right-5' : 'right-[50px] md:right-10'} z-10`}
             // style={{ [direction]: '0.5rem' }}
             aria-label={`Scroll ${direction}`}
         >
