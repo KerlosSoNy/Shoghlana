@@ -32,7 +32,7 @@ export default function Navbar() {
         return () => document.body.classList.remove("no-scroll");
     }, [isOpen]);
     return (
-        <div className="fixed top-[0px] md:top-[30px] w-[calc(100%-16px)] md:w-[calc(100%-64px)] mx-[8px] md:mx-[32px] rounded-[20px] bg-white border-[1px] border-gray-200 h-[86.41px] z-[1000] flex items-center ">
+        <div className="fixed top-[0px] shadow-2xl md:top-[30px] w-[calc(100%-16px)] md:w-[calc(100%-64px)] mx-[8px] md:mx-[32px] rounded-[20px] bg-white border-[1px] border-gray-200 h-[86.41px] z-[1000] flex items-center ">
             <div className="w-[calc(100%-64px)] mx-auto flex flex-row justify-between items-center">
                 <div className="flex flex-row items-center gap-8 text-[15px] font-[600] text-text">
                     <Logo />

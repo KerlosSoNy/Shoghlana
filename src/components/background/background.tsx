@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 
-export default function Background() {
+export default function Background({ linesOnly }: { linesOnly?: boolean }) {
     return (
-        <div className='absolute w-[100%] rounded-[25px] -z-[10] h-full  '>
-            <Image layout='fill' src={'/assets/home-01.jpg'} alt='background' className='object-cover' />
-            <Image layout='fill' src={'/assets/lines.png'} alt='background' className='object-cover' />
+        <div className={`absolute w-[100%] rounded-[25px] ${linesOnly ? "z-[10]" : "-z-[10]"} h-full  `}>
+            {!linesOnly && <Image layout='fill' src={'/assets/home-01.jpg'} alt='background' className='object-cover' />}
+            <Image layout='fill' src={'/assets/lines.png'} alt='background' className={`${linesOnly && "opacity-40"} object-cover`} />
         </div>
     )
 }
