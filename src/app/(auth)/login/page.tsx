@@ -55,7 +55,7 @@ export default function index() {
                 </div>
 
                 <div className="w-1/2 text-white p-8">
-                    <img src="/assets/logo.png" alt="Logo" className="w-[156.47px] mb-4" />
+                    <Image width={200} height={200} src="/assets/logo.png" alt="Logo" className="w-[156.47px] mb-4" />
                     <h2 className="text-[48px] w-[667.11px] font-semibold">Check out the coolest job opportunities in Egypt and<br /> the MENA area!</h2>
                     <p className="mt-4 text-[14px] w-[430.4px] text-sm text-white">Looking for job openings and career options? Shoghlana’s <br /> got your back in your job hunt in Egypt!</p>
                     <div className="mt-4 flex items-center">

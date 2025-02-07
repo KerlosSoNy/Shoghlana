@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function SectionSix() {
     return (
-        <div className='pt-[48px] px-[40px] md:px-[48px] gap-10 flex flex-col items-center xl:flex-row justify-evenly mb-[110px]'>
+        <div className="pt-[48px] px-[40px] md:px-[48px] gap-10 flex flex-col items-center xl:flex-row justify-evenly mb-[110px]">
             <div className='flex flex-col items-center xl:items-start'>
                 <div className='bg-main flex mb-[60px] flex-col items-center justify-center rounded-[19px] w-[74px] h-[74px]'>
                     <Image width={40} height={40} src={'/assets/icons/contact-support.svg'} alt='Contact Support' className='me-1' />
