@@ -127,12 +127,12 @@ const CustomSelectMenu: FC<CustomSelectMenuProps> = ({
             }}
         >
             {label ? (
-                <h1 className={`text-[16px] font-[400] text-[#26203B] mb-[8px]`}>
+                <h1 className={`text-[13.45px] font-[400]  text-[#84818A] mb-[6px]`}>
                     {label}
                 </h1>
             ) : null}
 
-            <div className={`flex bg-[#f5f5f5] px-2 rounded-lg items-center w-full`}>
+            <div className={`flex bg-[transparent] rounded-lg items-center`}>
                 {icon}
                 <Select
                     placeholder={placeholder}
@@ -153,6 +153,10 @@ const CustomSelectMenu: FC<CustomSelectMenuProps> = ({
                             ? options?.map((item) => ({ ...item, name: item.name }))
                             : []
                     }
+                    classNames={{
+                        control: () => "custom-select",
+                        menu: () => "outline-none custom-menu",
+                    }}
                     styles={customStyles}
                 />
             </div>

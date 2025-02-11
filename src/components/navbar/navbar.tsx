@@ -46,7 +46,7 @@ export default function Navbar() {
                     <Link href='/login' className="flex flex-row items-center me-[28.23px] gap-2 py-[9px] px-[18px] border-main border-[2px] rounded-[5px] ">
                         Log in
                     </Link>
-                    <Link href='/login' className="flex flex-row items-center gap-2 py-[9px] px-[18px] border-main border-[2px] bg-main text-white rounded-[5px] ">
+                    <Link href='/signup' className="flex flex-row items-center gap-2 py-[9px] px-[18px] border-main border-[2px] bg-main text-white rounded-[5px] ">
                         Get Started
                     </Link>
                 </div>
