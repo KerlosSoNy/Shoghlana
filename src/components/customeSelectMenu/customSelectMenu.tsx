@@ -87,7 +87,7 @@ const CustomSelectMenu: FC<CustomSelectMenuProps> = ({
         control: (provided, state) => ({
             ...provided,
             paddingLeft: "6px",
-            minHeight: "48px",
+            minHeight: "40px",
             backgroundColor: noBorder ? "#f9f9fa" : "transparent",
             borderRadius: "0.5rem",
             borderColor: error
@@ -98,7 +98,7 @@ const CustomSelectMenu: FC<CustomSelectMenuProps> = ({
                         ? "#f5f5f5"
                         : "#018AAF",
             borderWidth: noBorder ? "0px" : error ? "1px" : "1px",
-            boxShadow: shadow ? "0px 8px 8px rgba(0, 0, 0, 0.05)" : "",
+            boxShadow: shadow ? "0px 8px 8px rgba(0, 0, 0, 0.16)" : "",
             "&:hover": {
                 borderColor: error ? "red" : "blue",
             },
@@ -127,7 +127,7 @@ const CustomSelectMenu: FC<CustomSelectMenuProps> = ({
             }}
         >
             {label ? (
-                <h1 className={`text-[13.45px] font-[400]  text-[#84818A] mb-[6px]`}>
+                <h1 className={`text-[13.45px] font-[400]  text-[#84818A] mb-[4px]`}>
                     {label}
                 </h1>
             ) : null}

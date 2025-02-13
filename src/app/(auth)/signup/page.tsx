@@ -1,4 +1,5 @@
 import InputAndLabel from "@/components/input/inputAndLabel";
+import Image from "next/image";
 import Link from "next/link";
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
 
@@ -59,7 +60,7 @@ export default function Page() {
                 </div>
 
                 <div className="w-1/2 hidden xl:block text-white ps-10 xl:p-[126.5px]">
-                    <img src="/assets/logo.png" alt="Logo" className="w-[156.47px] mb-4" />
+                    <Image width={156.47} height={156.47} src="/assets/logo.png" alt="Logo" className="w-[156.47px] mb-4" />
                     <h2 className="text-[28px]  font-bold">Find the Best Jobs in Egypt</h2>
                     <ul className=" mt-4 space-y-2">
                         <li className="flex items-center gap-2">

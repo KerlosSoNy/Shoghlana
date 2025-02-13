@@ -1,9 +1,11 @@
 'use client'
 import Logo from "@/components/logo/logo";
+import CareerInteresting from "@/components/signUp/careerInteresting";
 import ProgressBar from "@/components/signUp/progressBar/progressBar";
 import SelfInformation from "@/components/signUp/selfInformation";
 import YourEducation from "@/components/signUp/yourEducation";
 import YourExperience from "@/components/signUp/yourExperience";
+import YourExperties from "@/components/signUp/yourExperties";
 import { useState } from "react";
 
 export default function Page() {
@@ -31,6 +33,16 @@ export default function Page() {
             {
                 step === 2 && (
                     <YourExperience handleNext={handleNext} handleBack={handleBack} />
+                )
+            }
+            {
+                step === 3 && (
+                    <YourExperties handleNext={handleNext} handleBack={handleBack} />
+                )
+            }
+            {
+                step === 4 && (
+                    <CareerInteresting handleNext={handleNext} handleBack={handleBack} />
                 )
             }
         </div>

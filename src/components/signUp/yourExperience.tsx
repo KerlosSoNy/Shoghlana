@@ -74,7 +74,7 @@ export default function YourExperience({ handleNext, handleBack }: { handleNext:
                             <button onClick={() => handleRemoveExperience(item.id)} title='delete' className='rounded-[8px] absolute top-6 flex flex-col items-center justify-center text-[20px] font-medium text-red-500'>
                                 <Trash />
                             </button>
-                            <button onClick={handleAddMoreExperience} className='px-4 h-[40px] rounded-[8px] flex flex-col items-center justify-center text-[16px] font-medium text-white bg-main'>Add More</button>
+                            <button onClick={handleAddMoreExperience} className='px-4 h-[40px] rounded-[8px] flex flex-col items-center justify-center text-[16px] font-medium text-[#033A8E]/40 bg-[#DCE5F3]/50'>Add More</button>
                         </div>
                     </div>
                 ))
