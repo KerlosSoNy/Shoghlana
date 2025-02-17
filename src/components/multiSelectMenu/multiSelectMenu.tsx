@@ -42,7 +42,7 @@ const CustomSelectMultipleMenu: FC<CustomSelectMenuProps> = ({
             defaultData.includes(option.id)
         );
         setSelectedValue(updatedSelectedObjects);
-    }, [defaultData, options]);
+    }, []);
 
     const handleOnChange = (selectedOptions: MultiValue<OptionType>) => {
         setSelectedValue(selectedOptions);

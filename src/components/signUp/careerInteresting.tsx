@@ -3,8 +3,9 @@ import React, { useState } from 'react'
 import CustomSelectMenu from '../customeSelectMenu/customSelectMenu'
 import CustomSelectMultipleMenu from '../multiSelectMenu/multiSelectMenu';
 import InputAndLabel from '../input/inputAndLabel';
+import Link from 'next/link';
 
-export default function CareerInteresting({ handleNext, handleBack }: { handleNext: () => void, handleBack: () => void }) {
+export default function CareerInteresting({ handleBack }: { handleBack: () => void }) {
 
     const jobTypes = [
         "Full Time",
@@ -26,8 +27,8 @@ export default function CareerInteresting({ handleNext, handleBack }: { handleNe
     };
 
     return (
-        <div className='w-[60%] bg-white relative z-[2] -mt-[80px] minh-[693px] shadow-2xl mb-20 mx-auto rounded-[25px] pb-[32px] ps-[25px] pt-[45px] flex flex-col items-start'>
-            <div className='flex flex-row items-center gap-1.5'>
+        <div className='w-[99%] sm:w-[90%] lg:w-[60%] bg-white relative z-[2] -mt-[80px] minh-[693px] shadow-2xl mb-20 mx-auto rounded-[25px] pb-[32px] ps-[25px] pt-[45px] flex flex-col items-start'>
+            <div className='flex flex-col sm:flex-row items-center gap-1.5'>
                 <span className='font-bold text-[29px] text-black'>Tell Us About Your</span>
                 <span className='font-extrabold text-[39px] mb-1 text-main'>Career Interesting</span>
             </div>
@@ -80,8 +81,8 @@ export default function CareerInteresting({ handleNext, handleBack }: { handleNe
             </div>
             <div className='flex flex-col pt-[26px] mt-[26px] border-t-[1px] border-gray-200 border-dashed w-[calc(100%-50px)]'>
                 <span className='font-medium text-[24px] mb-3 text-black'>What`s the minimum salary you would accept?<span className='text-[12px]'> Add a net  salary</span></span>
-                <div className='flex flex-row items-center w-[70%] gap-4'>
-                    <div className='w-[50%] flex flex-row items-center'>
+                <div className='flex flex-col sm:flex-row items-start sm:items-center w-[100%] sm:w-[70%] gap-4'>
+                    <div className='w-[80%] sm:w-[50%] flex flex-row items-start sm:items-center'>
                         <InputAndLabel />
                     </div>
                     <span>Egypt Pound (EGP / Month)</span>
@@ -91,9 +92,9 @@ export default function CareerInteresting({ handleNext, handleBack }: { handleNe
                 <input title='hide' type="checkbox" name="Hide This From Other Users" id="" />
                 <span>Hide This From Other Users</span>
             </div>
-            <div className='flex flex-row items-center w-full justify-center gap-4 mt-12 mb-4'>
-                <button type='button' onClick={handleBack} className='w-[249px] h-[45px] rounded-[8px] flex flex-col items-center justify-center text-[20px] font-medium text-black border-[1px] border-[#D9D9D9]'>Back</button>
-                <button type='button' onClick={handleNext} className='w-[249px] h-[45px] rounded-[8px] flex flex-col items-center justify-center text-[20px] font-medium text-white bg-main'>Continue</button>
+            <div className='flex flex-row items-center w-full justify-end sm:justify-center gap-4 mt-12 mb-4 pe-10 sm:pe-0'>
+                <button type='button' onClick={handleBack} className='w-[130px] sm:w-[249px] h-[45px] rounded-[8px] flex flex-col items-center justify-center text-[20px] font-medium text-black border-[1px] border-[#D9D9D9]'>Back</button>
+                <Link href={"/profile"} className='w-[130px] sm:w-[249px] h-[45px] rounded-[8px] flex flex-col items-center justify-center text-[20px] font-medium text-white bg-main'>Continue</Link>
             </div>
         </div>
     )

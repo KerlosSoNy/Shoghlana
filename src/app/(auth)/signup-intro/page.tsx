@@ -42,7 +42,7 @@ export default function Page() {
             }
             {
                 step === 4 && (
-                    <CareerInteresting handleNext={handleNext} handleBack={handleBack} />
+                    <CareerInteresting handleBack={handleBack} />
                 )
             }
         </div>

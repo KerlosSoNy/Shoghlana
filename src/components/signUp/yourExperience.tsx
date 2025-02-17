@@ -43,8 +43,8 @@ export default function YourExperience({ handleNext, handleBack }: { handleNext:
         console.log('Uploaded file:', file);
     };
     return (
-        <div className='w-[60%] bg-white relative z-[2] -mt-[80px] min-h-[693px] shadow-2xl mb-20 mx-auto rounded-[25px] pb-[32px] ps-[25px] pe-[65px] pt-[45px] flex flex-col items-start'>
-            <div className='flex flex-row items-center gap-1.5'>
+        <div className='w-[99%] sm:w-[90%] lg:w-[60%] bg-white relative z-[2] -mt-[80px] min-h-[693px] shadow-2xl mb-20 mx-auto rounded-[25px] pb-[32px] ps-[25px] pe-[25px] sm:pe-[65px] pt-[45px] flex flex-col items-start'>
+            <div className='flex flex-col sm:flex-row items-center mx-auto sm:mx-0 justify-center gap-1.5'>
                 <span className='font-bold text-[29px] text-black'>Tell Us About Your</span>
                 <span className='font-extrabold text-[39px] mb-1 text-main'>Experience</span>
             </div>
@@ -56,7 +56,7 @@ export default function YourExperience({ handleNext, handleBack }: { handleNext:
             {
                 experience.map((item, index) => (
                     <div key={index} className='flex flex-col relative w-full items-start'>
-                        <div className='flex flex-col w-[60%] gap-5'>
+                        <div className='flex flex-col w-[90%] sm:w-[60%] gap-5'>
                             <InputAndLabel label="Job title" placeholder="Job title" />
                             <InputAndLabel label="Company" placeholder="Company" />
                             <CustomSelectMenu shadow={true} label="Job category" options={[{ id: 1, name: "High School" }, { id: 2, name: "Bachelor" }, { id: 3, name: "Master" }, { id: 4, name: "PhD" }]} isGray />
@@ -80,9 +80,9 @@ export default function YourExperience({ handleNext, handleBack }: { handleNext:
                 ))
             }
             <DocumentUpload setFile={handleFileUpload} />
-            <div className='flex flex-row items-center w-full justify-center gap-4 mt-8 mb-4'>
-                <button type='button' onClick={handleBack} className='w-[249px] h-[45px] rounded-[8px] flex flex-col items-center justify-center text-[20px] font-medium text-black border-[1px] border-[#D9D9D9]'>Back</button>
-                <button type='button' onClick={handleNext} className='w-[249px] h-[45px] rounded-[8px] flex flex-col items-center justify-center text-[20px] font-medium text-white bg-main'>Continue</button>
+            <div className='flex flex-row items-center w-full justify-end sm:justify-center gap-4 mt-12 mb-4'>
+                <button type='button' onClick={handleBack} className='w-[120px] sm:w-[249px] h-[45px] rounded-[8px] flex flex-col items-center justify-center text-[20px] font-medium text-black border-[1px] border-[#D9D9D9]'>Back</button>
+                <button type='button' onClick={handleNext} className='w-[120px] sm:w-[249px] h-[45px] rounded-[8px] flex flex-col items-center justify-center text-[20px] font-medium text-white bg-main'>Continue</button>
             </div>
         </div>
     )

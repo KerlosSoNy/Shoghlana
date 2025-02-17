@@ -14,9 +14,9 @@ export default function ProgressBar({ currentStep }: { currentStep: number }) {
 
     return (
         <div className="flex items-center -mt-10 justify-center h-full w-full py-4">
-            <div className="w-[517px] h-[10px] bg-[#C6C6C6] relative rounded-full">
+            <div className="w-[75%] -ms-4 sm:w-[517px] h-[10px] bg-[#C6C6C6] relative rounded-full">
                 <div
-                    className="bg-main h-[10px] transition-all duration-300 rounded-full"
+                    className="bg-main h-[10px] transition-all duration-500 rounded-full"
                     style={{ width: `${progress}%` }}
                 />
                 {
@@ -26,7 +26,7 @@ export default function ProgressBar({ currentStep }: { currentStep: number }) {
                         return (
                             <div key={index}
                                 style={{ left: `${position}%`, transform: "translateX(-50%)", top: "-15px" }}
-                                className={`absolute ms-3 flex flex-col items-center justify-center gap-2`}>
+                                className={`absolute ms-3 transition-all duration-500 flex flex-col items-center justify-center gap-2`}>
                                 <div className={`relative top-0 left-0 h-[40px] w-[40px] ${index <= currentStep ? "bg-gradient-to-r from-[#4285F4] to-[#0055D9]" : "bg-[#C6C6C6] "} rounded-full flex flex-row items-center justify-center`}>
                                     {
                                         index >= currentStep && <div className={`top-0 left-0 h-[24px] w-[24px] ${index === currentStep ? "bg-main border-[4px] border-white" : index < currentStep ? "bg-main" : "bg-white"} rounded-full`} />
@@ -47,7 +47,7 @@ export default function ProgressBar({ currentStep }: { currentStep: number }) {
                                         )
                                     }
                                 </div>
-                                <span className="text-nowrap text-center text-[12px] text-white">{step}</span>
+                                <span className="text-nowrap text-center text-[10px] sm:text-[12px] text-white">{step}</span>
                             </div>
                         )
                     })
