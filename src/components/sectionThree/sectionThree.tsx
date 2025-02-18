@@ -1,5 +1,6 @@
 import React from 'react'
 import Background from '../background/background';
+import Link from 'next/link';
 
 
 const jobData = [
@@ -63,7 +64,7 @@ export default function SectionThree() {
                 ))}
             </div>
             <div className="text-center h-[270px] flex flex-col pt-[100px] mb-[100px] items-center justify-center bg-gradient-to-t from-white bg-white/80 -mt-[70px] relative z-10">
-                <button type='button' className="text-[48px] font-bold text-blue-600 hover:underline">View More</button>
+                <Link href='/explore' className="text-[48px] relative z-[10000]  font-bold text-main">View More</Link>
                 <Background blueOnly linesOnly />
             </div>
         </div>

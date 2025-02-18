@@ -1,11 +1,12 @@
+import Link from "next/link";
 
 export default function JobCardInCompnay() {
     return (
         <div className="w-full relative bg-white rounded-lg shadow-md px-[24px] py-[17px] flex items-start">
             <div className="flex-grow">
-                <h2 className="text-xl font-bold text-blue-600">
+                <Link href='/job/1' className="text-xl font-bold text-main">
                     UI UX Designer
-                </h2>
+                </Link>
                 <p className="text-[#001433] flex flex-row items-center mt-1 mb-2">
                     <span className='text-[11px] text-[#4D6182] text-semibold'>- Cairo, Egypt</span>
                 </p>

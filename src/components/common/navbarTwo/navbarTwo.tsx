@@ -17,8 +17,8 @@ export default function NavbarTwo() {
 
             {/* Center Section (Navigation Links) */}
             <div className="hidden items-center md:flex space-x-8">
-                <Link href="/explore" className={`${location === "/saved" ? "text-[#0055D9] text-[24px] font-bold" : "text-[#4D6182]  text-[20px] font-semibold"}  relative`}>
-                    {location === "/saved" && (
+                <Link href="/explore" className={`${location === "/explore" || location.includes("/job/") ? "text-[#0055D9] text-[24px] font-bold" : "text-[#4D6182]  text-[20px] font-semibold"}  relative`}>
+                    {location === "/explore" || location.includes("/job/") && (
                         <div className="w-full absolute -bottom-[30px] rounded-full h-0.5 bg-[#0055D9]" />
                     )}
                     Explore</Link>

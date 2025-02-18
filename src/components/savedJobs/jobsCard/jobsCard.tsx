@@ -6,7 +6,7 @@ export default function JobsCard() {
         <div className="max-w-[98%] mx-auto relative bg-white rounded-lg shadow-md p-4 flex items-start">
             <div className="flex-grow">
                 <h2 className="text-xl font-bold text-blue-600">
-                    UI UX Designer
+                    <Link href={`/job/1`}>UI UX Designer</Link>
                     <span className="ml-2 text-sm font-medium text-gray-500 bg-gray-100 px-2 py-1 rounded">
                         Full Time
                     </span>
