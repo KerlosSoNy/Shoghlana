@@ -1,14 +1,15 @@
 import NavbarTwo from '@/components/common/navbarTwo/navbarTwo'
 import JobCardInCompnay from '@/components/company/jobCardInCompnay'
+import Footer from '@/components/footer/footer'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 export default function Page() {
     return (
-        <div className='flex flex-col'>
+        <div className='flex flex-col max-w-screen overflow-hidden pb-4'>
             <NavbarTwo />
-            <div className="w-[80%] mx-auto mt-[54px] flex flex-col bg-white rounded-t-[25px] rounded-b-xl shadow-md overflow-hidden">
+            <div className="w-[98%] xl:w-[80%] mx-auto mt-[20px] xl:mt-[54px] flex flex-col bg-white rounded-t-[25px] rounded-b-xl shadow-md overflow-hidden">
                 <div className="p-6 relative w-full h-[257px] z-[2] rounded-t-[25px] overflow-hidden">
                     <Image
                         src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -17,7 +18,7 @@ export default function Page() {
                         className='object-cover'
                     />
                 </div>
-                <div className="p-6 rounded-xl bg-white -mt-10 relative z-[10]">
+                <div className="p-6 rounded-xl bg-white -mt-10 relative z-[10] pb-20 lg:pb-6">
                     <div className="flex items-center">
                         <Image
                             src="https://images.unsplash.com/photo-1496200186974-4293800e2c20?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -31,11 +32,11 @@ export default function Page() {
                             <Image src='/assets/icons/verified.svg' width={27} height={27} className='mt-0.5 mx-2' alt='Verified' />
                         </div>
                     </div>
-                    <p className="text-[#4D6182] max-w-[511px] text-[13px] font-[400] mt-2">
+                    <p className="text-[#4D6182] max-w-[250px] md:max-w-[511px] text-[13px] font-[400] mt-2">
                         Computer Software . Information Technology Services . Health, Wellness and Fitness . Cairo, Egypt . 1-10 employees
                         . Founded 2024
                     </p>
-                    <p className="text-[#4D6182] max-w-[411px] xl:max-w-[680px] text-[12px] font-[400] mt-5">
+                    <p className="text-[#4D6182] max-w-[411px] lg:max-w-[500px] xl:max-w-[680px] text-[12px] font-[400] mt-5">
                         At CapsCodeEG, we believe that rehabilitation can be smarter, more effective, and accessible to everyone. Our mission is to transform traditional care into an experience that empowers therapists, patients, and healthcare providers alike
                     </p>
 
@@ -67,12 +68,14 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-            <div className="w-[80%] mx-auto mt-[54px] flex flex-col bg-white rounded-[10px] rounded-b-xl shadow-md overflow-hidden border-[1px] py-[26.22px] px-[33.11px]">
+            <div className="w-[98%] xl:w-[80%] mx-auto mt-[20px] lg:mt-[54px] flex flex-col bg-white rounded-[10px] rounded-b-xl shadow-md overflow-hidden border-[1px] py-[26.22px] px-[33.11px]">
                 <span className='text-[#001433] text-[20px] font-semibold'>Jobs Shared</span>
                 <div className="mt-2 flex flex-col items-center" >
                     <JobCardInCompnay />
                 </div>
             </div>
+            <Footer />
+
         </div>
     )
 }

@@ -41,7 +41,7 @@ export default function JobDetails() {
             </div>
             <div className="mt-6 p-4 bg-gray-100 rounded-lg">
                 <h3 className="font-semibold text-[#4D6182] mb-2">Skills And Tools:</h3>
-                <div className="flex flex-wrap gap-2 max-w-[50%]">
+                <div className="flex flex-wrap gap-2 max-w-[98%] xl:max-w-[50%]">
                     <span className="bg-gray-200 text-gray-800 flex flex-row gap-1 px-2 py-1 rounded-full">
                         <img src="/assets/icons/youHaveThisSkill.svg" alt="" className='mb-0.5' />
                         UI</span>

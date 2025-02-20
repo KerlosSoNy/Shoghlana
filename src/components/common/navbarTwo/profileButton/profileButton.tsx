@@ -1,8 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 
 export default function ProfileButton() {
-
     const [isOpen, setIsOpen] = useState(false);
 
     const dropdownRef = useRef<HTMLDivElement>(null);
@@ -33,36 +33,36 @@ export default function ProfileButton() {
                     height={40}
                     className="rounded-full w-[44px] h-[44px] object-cover flex-1 flex-shrink-0"
                 />
-                <div className="ml-3 flex-1">
+                <div className="ml-3 flex-1 hidden lg:block">
                     <p className="font-bold">Fathy Tamer</p>
                     <p className="text-sm text-gray-500">Fathytameruix@gmail.com</p>
                 </div>
-                <span className="ml-auto">
-                    <i className="fas fa-chevron-down"></i>
-                </span>
             </div>
 
             {isOpen && (
-                <div className="absolute z-[100] right-0 mt-2 w-56 bg-white rounded-md shadow-lg">
+                <div className="absolute z-[100] right-[-400%] lg:right-0 mt-2 w-56 bg-white rounded-md shadow-lg">
                     <ul className="py-1">
                         <li className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                            <i className="fas fa-user mr-3"></i>
-                            View Profile
+                            <div className="ml-3 flex-1">
+                                <p className="font-bold">Fathy Tamer</p>
+                                <p className="text-sm text-gray-500">Fathytameruix@gmail.com</p>
+                            </div>
+                        </li>
+                        <li>
+                            <Link href="/profile" onClick={() => setIsOpen(false)} className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                View Profile
+                            </Link>
                         </li>
                         <li className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                            <i className="fas fa-edit mr-3"></i>
-                            Edit Profile
+                            Setting
                         </li>
                         <li className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                            <i className="fas fa-info-circle mr-3"></i>
                             About Us
                         </li>
                         <li className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                            <i className="fas fa-envelope mr-3"></i>
                             Contact Us
                         </li>
                         <li className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                            <i className="fas fa-sign-out-alt mr-3"></i>
                             Logout
                         </li>
                     </ul>

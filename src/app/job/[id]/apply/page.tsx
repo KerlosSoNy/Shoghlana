@@ -1,7 +1,6 @@
 import NavbarTwo from '@/components/common/navbarTwo/navbarTwo'
+import TextArea from '@/components/common/textArea/textArea'
 import Footer from '@/components/footer/footer'
-import JobDetails from '@/components/jobs/jobDetails'
-import JobRequirements from '@/components/jobs/jobRequirements'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -48,9 +47,6 @@ export default function Page() {
                     <span className='mt-4 text-[13px] font-[400] text-[#4D6182]'>Posted 4 days ago</span>
                     <div className="flex flex-col-reverse md:flex-row gap-4 md:justify-between flex-wrap justify-center items-center mt-[31px]">
                         <div className='flex flex-col-reverse md:flex-row gap-5 justify-start items-start md:items-center'>
-                            <Link href={`2/apply`} className="bg-main rounded-[5px] h-[40px] w-full md:w-[160px] lg:w-[200px] text-[15px] font-[400] text-white flex flex-col items-center justify-center">
-                                Apply For Job
-                            </Link>
                             <div className=" items-center md:flex hidden ms-0 xl:ms-[30px]">
                                 <span className="font-[600] text-[22px] xl:text-[28px] text-[#4D6182]">20</span>
                                 <span className="font-[600] text-[13px] ms-1 xl:ms-2 text-[#4D6182]">Applicants for</span>
@@ -90,14 +86,53 @@ export default function Page() {
 
                 </div>
             </div>
-            <div className='w-[98%] xl:w-[80%] mx-auto mt-[20px] lg:mt-[36px]'>
-                <JobDetails />
+            <div className="w-[98%] xl:w-[80%] mx-auto my-[20px] xl:my-[34px] flex flex-col bg-white rounded-t-[25px] rounded-b-xl shadow-md overflow-hidden">
+                <div className='flex flex-row items-center h-[56px] ps-[32px] bg-main py-[13px] text-white font-bold text-[20px] w-full'>
+                    <span>Application Form</span>
+                </div>
+                <div className='flex flex-col gap-[30px] py-[32px] px-[28px]'>
+                    <div className='flex flex-col gap-[7px]'>
+                        <span className='text-[15px] text-[#001433] font-bold'>If a user could only navigate your design using emojis, how would you structure the experience?</span>
+                        <TextArea />
+                    </div>
+                    <div className='flex flex-col gap-[7px]'>
+                        <span className='text-[15px] text-[#001433] font-bold'>If your wireframes were turned into a reality TV show, what would the most dramatic moment be?</span>
+                        <TextArea />
+                    </div>
+                    <div className='flex flex-col gap-[7px]'>
+                        <span className='text-[15px] text-[#001433] font-bold'>Do you have a good laptop? Write down your laptop specifications.</span>
+                        <TextArea />
+                    </div>
+                    <div className='flex flex-col gap-[7px]'>
+                        <span className='text-[15px] text-[#001433] font-bold'>Imagine your app detects someone doing squats in slow motion—how would you use UI/UX elements to motivate them to pick up the pace?</span>
+                        <TextArea />
+                    </div>
+                    <div className='flex flex-col gap-[7px]'>
+                        <span className='text-[15px] text-[#001433] font-bold'>If a physiotherapy patient wanted to visualize their progress as a growing tree, how would you design the interface to reflect their journey?</span>
+                        <TextArea />
+                    </div>
+                    <div className='flex flex-col gap-[7px]'>
+                        <span className='text-[15px] text-[#001433] font-bold'>What are your salary expectations?</span>
+                        <TextArea />
+                    </div>
+                </div>
             </div>
-            <div className='w-[98%] xl:w-[80%] mx-auto my-[20px] lg:my-[36px]'>
-                <JobRequirements />
+            <div className="w-[98%] xl:w-[80%] mx-auto mb-[10px] xl:mb-[24px] flex 
+            flex-col-reverse
+            md:flex-row justify-center md:justify-between items-center bg-white overflow-hidden flex-wrap gap-4">
+                <Link href="/job/2" className='flex flex-row items-center  bg-[#EBEDF0] border-[1px] border-[#D9DDE4] justify-center gap-1 font-[400] text-[15px] w-[90px] h-[40px] text-[#4D6182]'>
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.96275 12.736L11.104 11.64L7.39775 8.07232L11.104 4.50465L9.96275 3.40869L5.10791 8.07232L9.96275 12.736Z" fill="#4D6182" />
+                    </svg>
+                    Cancle</Link>
+                <div className='flex flex-row gap-2'>
+                    <Link href="/job/2" className='flex flex-row items-center  bg-[#EBEDF0] border-[1px] border-[#D9DDE4] justify-center gap-1 font-[400] text-[15px] px-2 w-fit md:w-[170px] h-[40px] text-[#4D6182]'>
+                        Save and Apply later</Link>
+                    <button type='button' className='flex flex-row items-center  bg-main justify-center gap-1 font-[400] text-[15px] px-2 w-fit md:w-[170px] h-[40px] text-white'>
+                        Submit application</button>
+                </div>
             </div>
             <Footer />
-
         </div>
     )
 }
