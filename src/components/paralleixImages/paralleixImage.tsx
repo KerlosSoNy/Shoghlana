@@ -48,13 +48,13 @@ export default function ParallaxImage({ images, baseVelocity = 100, bg }: Parall
 
     return (
         <div className={`parallax ${bg ? `${bg}` : '!bg-white'}`}>
-            <motion.div className="scroller flex gap-[120px]" style={{ x }}>
+            <motion.div className="scroller flex gap-[80px]" style={{ x }}>
                 {images.map((src, index) => (
                     <motion.img
                         key={index}
                         src={src}
                         alt={`parallax-image-${index}`}
-                        className=" object-scale-down"
+                        className=" object-scale-down w-[200px] h-[140px]"
                     />
                 ))}
                 {images.map((src, index) => (
@@ -62,7 +62,7 @@ export default function ParallaxImage({ images, baseVelocity = 100, bg }: Parall
                         key={`${index}-duplicate`}
                         src={src}
                         alt={`parallax-image-duplicate-${index}`}
-                        className="object-scale-down"
+                        className=" object-scale-down w-[200px] h-[140px]"
                     />
                 ))}
                 {images.map((src, index) => (
@@ -70,7 +70,7 @@ export default function ParallaxImage({ images, baseVelocity = 100, bg }: Parall
                         key={`${index}-duplicate`}
                         src={src}
                         alt={`parallax-image-duplicate-${index}`}
-                        className="object-scale-down"
+                        className=" object-scale-down w-[200px] h-[140px]"
                     />
                 ))}
                 {images.map((src, index) => (
@@ -78,7 +78,7 @@ export default function ParallaxImage({ images, baseVelocity = 100, bg }: Parall
                         key={`${index}-duplicate`}
                         src={src}
                         alt={`parallax-image-duplicate-${index}`}
-                        className="object-scale-down"
+                        className=" object-scale-down w-[200px] h-[140px]"
                     />
                 ))}
                 {images.map((src, index) => (
@@ -86,7 +86,7 @@ export default function ParallaxImage({ images, baseVelocity = 100, bg }: Parall
                         key={`${index}-duplicate`}
                         src={src}
                         alt={`parallax-image-duplicate-${index}`}
-                        className="object-scale-down"
+                        className=" object-scale-down w-[200px] h-[140px]"
                     />
                 ))}
                 {images.map((src, index) => (
@@ -94,7 +94,7 @@ export default function ParallaxImage({ images, baseVelocity = 100, bg }: Parall
                         key={`${index}-duplicate`}
                         src={src}
                         alt={`parallax-image-duplicate-${index}`}
-                        className="object-scale-down"
+                        className=" object-scale-down w-[200px] h-[140px]"
                     />
                 ))}
             </motion.div>
