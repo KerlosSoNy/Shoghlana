@@ -30,7 +30,7 @@ const SkillsAndExperience = () => {
             {/* Education */}
             <div className="border-b pb-4 mb-4">
                 <h2 className="text-xl font-bold mb-2">Education</h2>
-                <p>Bachelor's Degree in Computer Engineering</p>
+                <p>Bachelors Degree in Computer Engineering</p>
                 <p className="text-sm text-gray-600">Modern Academy for Engineering and Technology (MIS)</p>
                 <p className="text-sm text-gray-600">Jan 2023</p>
                 <button className="text-blue-600 text-sm mt-2">+ Add education</button>

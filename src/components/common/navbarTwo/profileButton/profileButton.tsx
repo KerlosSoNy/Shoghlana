@@ -53,8 +53,10 @@ export default function ProfileButton() {
                                 View Profile
                             </Link>
                         </li>
-                        <li className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                            Setting
+                        <li>
+                            <Link href="/setting" onClick={() => setIsOpen(false)} className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                Setting
+                            </Link>
                         </li>
                         <li className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
                             About Us

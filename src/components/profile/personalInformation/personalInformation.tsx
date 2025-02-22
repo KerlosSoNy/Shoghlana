@@ -27,7 +27,7 @@ export default function PersonalInformation() {
                     <li className="flex flex-row"><strong className="min-w-[146px] ">Minimum Salary:</strong> Confidential</li>
                     <li className="flex flex-row"><strong className="me-2 min-w-[146px]">Job Search Status:</strong> <span className="text-green-600">Actively searching</span></li>
                     <li className="flex flex-row"><strong className="w-[146px]">Nationality:</strong> Egypt</li>
-                    <li className="flex flex-row"><strong className="w-[146px]">Education Level:</strong> Bachelor's Degree</li>
+                    <li className="flex flex-row"><strong className="w-[146px]">Education Level:</strong> Bachelors Degree</li>
                     <li className="flex flex-row"><strong className="w-[146px]">Gender:</strong> Male</li>
                     <li className="text-blue-600 cursor-pointer">+ Add driving license</li>
                 </ul>
@@ -62,7 +62,7 @@ export default function PersonalInformation() {
                     </span>
                     <div className="flex space-x-4 text-blue-600 text-[10px] md:text-sm">
                         <button className="hover:underline">Preview CV</button>
-                        <span>|</span>
+                        <div className="w-[1px] h-4 bg-gray-300" />
                         <button className="hover:underline">Update CV</button>
                     </div>
                 </div>
