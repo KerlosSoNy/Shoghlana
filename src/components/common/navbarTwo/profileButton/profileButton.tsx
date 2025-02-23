@@ -54,7 +54,7 @@ export default function ProfileButton() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/setting" onClick={() => setIsOpen(false)} className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                            <Link href="/setting/general-info" onClick={() => setIsOpen(false)} className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
                                 Setting
                             </Link>
                         </li>
