@@ -55,7 +55,11 @@ export default function NavbarTwo() {
                         <div className="w-full absolute -bottom-[30px] rounded-full h-0.5 bg-[#0055D9]" />
                     )}
                     (1) Saved</Link>
-                <Link href="#" className="text-[#4D6182] font-semibold text-[20px]">Application</Link>
+                <Link href="/applications" className={`${location === "/applications" ? "text-[#0055D9] text-[24px] font-bold" : "text-[#4D6182]  text-[20px] font-semibold"}  relative`}>
+                    {location === "/applications" && (
+                        <div className="w-full absolute -bottom-[30px] rounded-full h-0.5 bg-[#0055D9]" />
+                    )}
+                    Application</Link>
             </div>
 
             {/* Search Bar */}
